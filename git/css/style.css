@@ -1,0 +1,114 @@
+/* Цвета */
+/* Шрифты */
+@font-face {
+  font-family: 'Spartan';
+  src: url('../fonts/Raleway-Light.ttf') format("truetype");
+}
+/* Base */
+html {
+  font-size: 10px;
+}
+body {
+  background-color: #262626;
+}
+.main {
+  height: 70rem;
+  padding-top: 3px;
+  background: #262626 url('../img/background-main.jpg') center top no-repeat;
+  background-size: cover;
+}
+.main .background-nav {
+  position: absolute;
+  height: 65px;
+  width: 100%;
+  background-color: #09080c;
+}
+.main .header {
+  font-family: 'Spartan', sans-serif;
+}
+.main .header .logo {
+  display: table;
+}
+.main .header .logo p {
+  position: absolute;
+  top: 0;
+  transform: translateY(50%) translateX(55%);
+  font-family: 'Spartan', sans-serif;
+  color: #f3f3f3;
+  font-size: 3rem;
+}
+.main-navigation {
+  display: table;
+  height: 60px;
+  vertical-align: middle;
+}
+.main ul.nav {
+  margin-left: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+.main .nav li {
+  float: left;
+}
+.main ul.nav a {
+  display: inline-block;
+  margin-top: 0.3rem;
+  padding: 1.5rem 0.5rem;
+  height: 60px;
+  font-family: 'Spartan', sans-serif;
+  font-size: 1.8rem;
+  color: #f3f3f3;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+}
+.main ul.nav a:hover {
+  height: 60px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 0.3rem solid #ff0036;
+  border-top: 0.3rem solid #ff0036;
+}
+.main .content {
+  display: block;
+  width: 100%;
+  font-family: 'Spartan', sans-serif;
+  color: #fff;
+  text-align: center;
+}
+.main .content strong {
+  display: inline-block;
+  padding-top: 13rem;
+  font-size: 3rem;
+  font-weight: 900 !important;
+  text-align: center;
+}
+.main .content strong red {
+  color: #ff0036;
+}
+.main .content .promo {
+  font-size: 1.6rem;
+}
+.main .content .btn-red {
+  display: inline-block;
+  height: 5rem;
+  width: 15rem;
+  border: none;
+  margin-top: 5rem;
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #ff0036;
+  margin-right: 3rem;
+}
+.main .content .btn-gray {
+  display: inline-block;
+  height: 5rem;
+  width: 15rem;
+  border: none;
+  margin-top: 5rem;
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #262626;
+}
