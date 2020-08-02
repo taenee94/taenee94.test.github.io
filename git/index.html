@@ -1,0 +1,1500 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles\bootstrap.css">
+    <link rel="stylesheet" href="styles\style.css">
+</head> 
+<body>
+<div class="card-header">
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+    <id>R15</id>
+    <name>Digit МФЦ 2.0</name>
+    <description></description>
+    <config></config>
+    <createdon>2020-02-03T02:50:18Z</createdon>
+    <completed>false</completed>
+    <milestone></milestone>
+    <stats>
+        <passed>
+            <percent>0</percent>
+            <count>0</count>
+        </passed>
+        <blocked>
+            <percent>0</percent>
+            <count>0</count>
+        </blocked>
+        <untested>
+            <percent>100</percent>
+            <count>48</count>
+        </untested>
+        <retest>
+            <percent>0</percent>
+            <count>0</count>
+        </retest>
+        <failed>
+            <percent>0</percent>
+            <count>0</count>
+        </failed>
+    </stats>
+    <sections>
+        <section>
+            <name>Заявления</name>
+            <description></description>
+            <sections>
+                <section>
+                    <name>Создание заявления</name>
+                    <description></description>
+                    <tests>
+                        <test>
+                            <id>T607</id>
+                            <title>Создание заявления из грида заявлений</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Critical</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>1</id>
+                                        <value>Operator</value>
+                                    </item>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                                <preconds>Роль: оператор, аудитор
+                                    /cpgu/orders</preconds>
+                                <steps>1. В гриде заявлений нажать на кнопку &quot;Новое заявление&quot;
+                                    http://prntscr.com/ql8paf
+                                    2. В гриде заявителей выбираем заявителя и нажимаем Выбрать
+                                    3. В гриде услуг выбираем услугу и нажимаем Оказать Выбранные услуги
+                                    3а. Выбрать действие &apos;Продолжить без талона&apos; для окна предупреждения о
+                                    неудавшемся распознавании талона (Если нет ЭО или она выключена)
+                                    3б. Выбрать действие &apos;Продолжить&apos; для окна предупреждения о некорректности
+                                    создания заявления без талона (Если нет ЭО или она выключена)
+                                    4. В заявлении проверяем подтягивание данных и нажимаем на кнопку Сохранить
+                                    http://prntscr.com/gbghs4</steps>
+                                <expected>Найти заявление и открыть на редактирование. Данные на форме сохранены.
+                                </expected>
+                            </custom>
+                            <caseid>C310</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T625</id>
+                            <title>Создание заявления с представителем</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>1</id>
+                                        <value>Operator</value>
+                                    </item>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                            </custom>
+                            <caseid>C413</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T543</id>
+                            <title>Расчет срока оказания услуги</title>
+                            <template>Test Case (Text)</template>
+                            <type>Other</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>0</id>
+                                    <value> None</value>
+                                </automation_type>
+                            </custom>
+                            <caseid>C471</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                    </tests>
+                </section>
+                <section>
+                    <name>Редактирование заявления</name>
+                    <description></description>
+                    <tests>
+                        <test>
+                            <id>T609</id>
+                            <title>Редактирование Заявления</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Critical</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>1</id>
+                                        <value>Operator</value>
+                                    </item>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                                <preconds>Роль: оператор, аудитор
+                                    /cpgu/orders</preconds>
+                                <steps>1. Выбрать заявление и открыть его на редактирование http://prntscr.com/ql9jxl
+                                    2. Редактировать данные заявления, например: http://prntscr.com/ql9llf
+                                    3. Сохранить заявление
+                                    4. Найти это заявление и открыть на редактирование</steps>
+                                <expected>Проверить, что изменения на форме сохранены</expected>
+                            </custom>
+                            <caseid>C312</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                    </tests>
+                </section>
+                <section>
+                    <name>Копирование заявления</name>
+                    <description></description>
+                    <tests>
+                        <test>
+                            <id>T626</id>
+                            <title>Полное копирование заявления</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                            </custom>
+                            <caseid>C414</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                    </tests>
+                </section>
+                <section>
+                    <name>Консультация</name>
+                    <description></description>
+                    <tests>
+                        <test>
+                            <id>T630</id>
+                            <title>Создание консультации из каталога услуг</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                            </custom>
+                            <caseid>C418</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T631</id>
+                            <title>Предоставление консультации из формы заявления</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                            </custom>
+                            <caseid>C419</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                    </tests>
+                </section>
+                <section>
+                    <name>Статусы заявлений</name>
+                    <description></description>
+                    <tests>
+                        <test>
+                            <id>T610</id>
+                            <title>Перевод заявления из статуса &apos;В работе&apos; в статус &apos;Обработка&apos; из
+                                формы редактирования заявления (Документы на Обработку)</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                            </custom>
+                            <caseid>C313</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T611</id>
+                            <title>Перевод заявления в статус &apos;Завершено&apos; из формы редактирования заявления
+                            </title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                            </custom>
+                            <caseid>C314</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T612</id>
+                            <title>Перевод заявления в статус &apos;Обработка&apos; (Взять в обработку)</title>
+                            <template>Test Case (Text)</template>
+                            <type>Other</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>0</id>
+                                    <value> None</value>
+                                </automation_type>
+                            </custom>
+                            <caseid>C315</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T613</id>
+                            <title>Перевод заявления из статуса &apos;Обработка&apos; в статус &apos;Доработка&apos;
+                            </title>
+                            <template>Test Case (Text)</template>
+                            <type>Other</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>0</id>
+                                    <value> None</value>
+                                </automation_type>
+                            </custom>
+                            <caseid>C316</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T614</id>
+                            <title>Перевод заявления из статуса &apos;Обработка&apos; в статус &apos;Отправлено в
+                                ВИС&apos;</title>
+                            <template>Test Case (Text)</template>
+                            <type>Other</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>0</id>
+                                    <value> None</value>
+                                </automation_type>
+                            </custom>
+                            <caseid>C317</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                    </tests>
+                    <sections>
+                        <section>
+                            <name>Групповая смена статусов</name>
+                            <description></description>
+                            <tests>
+                                <test>
+                                    <id>T643</id>
+                                    <title>Перевод в статус &apos;Завершено&apos;</title>
+                                    <template>Test Case (Text)</template>
+                                    <type>Other</type>
+                                    <priority>Medium</priority>
+                                    <estimate></estimate>
+                                    <references></references>
+                                    <custom>
+                                        <automation_type>
+                                            <id>0</id>
+                                            <value> None</value>
+                                        </automation_type>
+                                    </custom>
+                                    <caseid>C450</caseid>
+                                    <status>Untested</status>
+                                    <assignedto></assignedto>
+                                    <inprogress></inprogress>
+                                    <changes>
+                                    </changes>
+                                </test>
+                            </tests>
+                        </section>
+                    </sections>
+                </section>
+                <section>
+                    <name>Документы</name>
+                    <description>Печать и загрузка документов</description>
+                    <tests>
+                        <test>
+                            <id>T632</id>
+                            <title>Печать расписки из формы заявления</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                            </custom>
+                            <caseid>C420</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T633</id>
+                            <title>Загрузка документа в таблицу документов</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                            </custom>
+                            <caseid>C421</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T529</id>
+                            <title>Сканирование документа через smart-agent</title>
+                            <template>Test Case (Text)</template>
+                            <type>Other</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>0</id>
+                                    <value> None</value>
+                                </automation_type>
+                            </custom>
+                            <caseid>C422</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T530</id>
+                            <title>Подписание отсканированного документа через smart-agent</title>
+                            <template>Test Case (Text)</template>
+                            <type>Other</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>0</id>
+                                    <value> None</value>
+                                </automation_type>
+                            </custom>
+                            <caseid>C423</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T531</id>
+                            <title>Сканирование документа через aplet</title>
+                            <template>Test Case (Text)</template>
+                            <type>Other</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>0</id>
+                                    <value> None</value>
+                                </automation_type>
+                            </custom>
+                            <caseid>C424</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                    </tests>
+                </section>
+                <section>
+                    <name>Поиск</name>
+                    <description></description>
+                    <tests>
+                        <test>
+                            <id>T634</id>
+                            <title>Поиск по номеру заявления</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                            </custom>
+                            <caseid>C425</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T635</id>
+                            <title>Поиск по заявителю/представителю</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                            </custom>
+                            <caseid>C427</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T636</id>
+                            <title>Поиск по названию услуги</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                            </custom>
+                            <caseid>C428</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                    </tests>
+                </section>
+                <section>
+                    <name>Фильтры</name>
+                    <description></description>
+                    <tests>
+                        <test>
+                            <id>T637</id>
+                            <title>По периоду</title>
+                            <template>Test Case (Text)</template>
+                            <type>Other</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>0</id>
+                                    <value> None</value>
+                                </automation_type>
+                            </custom>
+                            <caseid>C429</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T638</id>
+                            <title>По внутреннему статусу</title>
+                            <template>Test Case (Text)</template>
+                            <type>Other</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>0</id>
+                                    <value> None</value>
+                                </automation_type>
+                            </custom>
+                            <caseid>C431</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                    </tests>
+                </section>
+                <section>
+                    <name>Сортировка</name>
+                    <description></description>
+                    <tests>
+                        <test>
+                            <id>T639</id>
+                            <title>По номеру заявления</title>
+                            <template>Test Case (Text)</template>
+                            <type>Other</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>0</id>
+                                    <value> None</value>
+                                </automation_type>
+                            </custom>
+                            <caseid>C433</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T640</id>
+                            <title>По наименованию услуги</title>
+                            <template>Test Case (Text)</template>
+                            <type>Other</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>0</id>
+                                    <value> None</value>
+                                </automation_type>
+                            </custom>
+                            <caseid>C434</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                    </tests>
+                </section>
+                <section>
+                    <name>Экспорт в excel</name>
+                    <description></description>
+                </section>
+            </sections>
+        </section>
+        <section>
+            <name>Обработка заявлений</name>
+            <description>Создание исходящий и входящих пакетов, отправка в ведомство и принятие. Работа с гридом.
+                Передача документов.</description>
+            <sections>
+                <section>
+                    <name>Исходящие пакеты</name>
+                    <description>/cpgu/orderPackages</description>
+                    <tests>
+                        <test>
+                            <id>T615</id>
+                            <title>Создание пакета заявлений</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                            </custom>
+                            <caseid>C318</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T616</id>
+                            <title>Отправка пакета заявлений</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                            </custom>
+                            <caseid>C320</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T617</id>
+                            <title>Печать описи документов</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                            </custom>
+                            <caseid>C322</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T618</id>
+                            <title>Поиск по номеру пакета</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                            </custom>
+                            <caseid>C324</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                    </tests>
+                </section>
+                <section>
+                    <name>Входящие пакеты</name>
+                    <description>/cpgu/incomingOrderPackages</description>
+                    <tests>
+                        <test>
+                            <id>T619</id>
+                            <title>Создание пакета заявлений</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                            </custom>
+                            <caseid>C325</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T620</id>
+                            <title>Принятие пакета</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                            </custom>
+                            <caseid>C328</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T621</id>
+                            <title>Поиск по номеру пакета</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                            </custom>
+                            <caseid>C331</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                    </tests>
+                </section>
+                <section>
+                    <name>Передача дел</name>
+                    <description></description>
+                </section>
+                <section>
+                    <name>Ведомости для курьера</name>
+                    <description></description>
+                </section>
+            </sections>
+        </section>
+        <section>
+            <name>Заявители</name>
+            <description></description>
+            <tests>
+                <test>
+                    <id>T623</id>
+                    <title>История обращений</title>
+                    <template>Test Case (Text)</template>
+                    <type>Other</type>
+                    <priority>Medium</priority>
+                    <estimate></estimate>
+                    <references></references>
+                    <custom>
+                        <automation_type>
+                            <id>1</id>
+                            <value> Yes</value>
+                        </automation_type>
+                    </custom>
+                    <caseid>C334</caseid>
+                    <status>Untested</status>
+                    <assignedto></assignedto>
+                    <inprogress></inprogress>
+                    <changes>
+                    </changes>
+                </test>
+                <test>
+                    <id>T624</id>
+                    <title>Поиск заявителя</title>
+                    <template>Test Case (Text)</template>
+                    <type>Other</type>
+                    <priority>Medium</priority>
+                    <estimate></estimate>
+                    <references></references>
+                    <custom>
+                        <automation_type>
+                            <id>1</id>
+                            <value> Yes</value>
+                        </automation_type>
+                    </custom>
+                    <caseid>C335</caseid>
+                    <status>Untested</status>
+                    <assignedto></assignedto>
+                    <inprogress></inprogress>
+                    <changes>
+                    </changes>
+                </test>
+            </tests>
+            <sections>
+                <section>
+                    <name>Создание заявления</name>
+                    <description></description>
+                    <tests>
+                        <test>
+                            <id>T608</id>
+                            <title>Создание заявления из грида заявителей</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>High</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <preconds>Роль: оператор, аудитор
+                                    /cpgu/requesters</preconds>
+                                <steps>1. Найти заявителя в гриде заявителей
+                                    2. Нажать кнопку &quot;Новое заявление&quot; http://prntscr.com/ql96xv
+                                    3. В гриде услуг выбираем услугу и нажимаем Оказать Выбранные услуги
+                                    3а. Выбрать действие &apos;Продолжить без талона&apos; для окна предупреждения о
+                                    неудавшемся распознавании талона (Если нет ЭО или она выключена)
+                                    3б. Выбрать действие &apos;Продолжить&apos; для окна предупреждения о некорректности
+                                    создания заявления без талона (Если нет ЭО или она выключена)
+                                    4. В заявлении проверяем подтягивание данных и нажимаем на кнопку Сохранить</steps>
+                                <expected>Найти заявление и открыть на редактирование. Данные на форме сохранены.
+                                </expected>
+                            </custom>
+                            <caseid>C311</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                    </tests>
+                </section>
+                <section>
+                    <name>Создание заявителя</name>
+                    <description></description>
+                    <tests>
+                        <test>
+                            <id>T622</id>
+                            <title>Новый заявитель ФЛ</title>
+                            <template>Test Case (Text)</template>
+                            <type>Other</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>0</id>
+                                    <value> None</value>
+                                </automation_type>
+                            </custom>
+                            <caseid>C332</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                    </tests>
+                </section>
+            </sections>
+        </section>
+        <section>
+            <name>Услуги</name>
+            <description></description>
+            <sections>
+                <section>
+                    <name>Каталог услуг</name>
+                    <description>/cpgu/services
+                        Оператор, Аудитор, Сотрудник КЦ, Обработчик</description>
+                    <tests>
+                        <test>
+                            <id>T641</id>
+                            <title>Поиск по наименованию услуги</title>
+                            <template>Test Case (Text)</template>
+                            <type>Other</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                            </custom>
+                            <caseid>C439</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                    </tests>
+                    <sections>
+                        <section>
+                            <name>Создание заявления</name>
+                            <description></description>
+                        </section>
+                        <section>
+                            <name>Фильтры</name>
+                            <description></description>
+                        </section>
+                        <section>
+                            <name>База знаний</name>
+                            <description></description>
+                            <tests>
+                                <test>
+                                    <id>T642</id>
+                                    <title>Переход в БЗ</title>
+                                    <template>Test Case (Text)</template>
+                                    <type>Other</type>
+                                    <priority>Medium</priority>
+                                    <estimate></estimate>
+                                    <references></references>
+                                    <custom>
+                                        <automation_type>
+                                            <id>0</id>
+                                            <value> None</value>
+                                        </automation_type>
+                                    </custom>
+                                    <caseid>C440</caseid>
+                                    <status>Untested</status>
+                                    <assignedto></assignedto>
+                                    <inprogress></inprogress>
+                                    <changes>
+                                    </changes>
+                                </test>
+                            </tests>
+                        </section>
+                    </sections>
+                </section>
+                <section>
+                    <name>Редактор форм</name>
+                    <description>/cpgu/customServices
+                        Администратор, Суперпользователь</description>
+                    <tests>
+                        <test>
+                            <id>T644</id>
+                            <title>Создание кастомной услуги</title>
+                            <template>Test Case (Text)</template>
+                            <type>Other</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                            </custom>
+                            <caseid>C472</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                    </tests>
+                </section>
+                <section>
+                    <name>Категории услуг</name>
+                    <description>/cpgu/serviceTypes
+                        Администратор, Суперпользователь</description>
+                </section>
+            </sections>
+        </section>
+        <section>
+            <name>Отчеты</name>
+            <description></description>
+            <tests>
+                <test>
+                    <id>T537</id>
+                    <title>Создание отчета &apos;Мониторинг услуг за месяц&apos;</title>
+                    <template>Test Case (Text)</template>
+                    <type>Other</type>
+                    <priority>Medium</priority>
+                    <estimate></estimate>
+                    <references></references>
+                    <custom>
+                        <automation_type>
+                            <id>0</id>
+                            <value> None</value>
+                        </automation_type>
+                    </custom>
+                    <caseid>C453</caseid>
+                    <status>Untested</status>
+                    <assignedto></assignedto>
+                    <inprogress></inprogress>
+                    <changes>
+                    </changes>
+                </test>
+            </tests>
+        </section>
+        <section>
+            <name>Отправленные СМС</name>
+            <description></description>
+        </section>
+        <section>
+            <name>Претензии</name>
+            <description></description>
+        </section>
+        <section>
+            <name>Контроль</name>
+            <description></description>
+        </section>
+        <section>
+            <name>Интеграции</name>
+            <description></description>
+            <sections>
+                <section>
+                    <name>Отправка заявлений</name>
+                    <description></description>
+                    <tests>
+                        <test>
+                            <id>T539</id>
+                            <title>Справка о судимости (СМЭВ 3, МВД)</title>
+                            <template>Test Case (Text)</template>
+                            <type>Other</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>0</id>
+                                    <value> None</value>
+                                </automation_type>
+                            </custom>
+                            <caseid>C464</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T540</id>
+                            <title>АДВ-1 (СМЭВ 3, ПФР)</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>Critical</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>0</id>
+                                    <value> None</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>1</id>
+                                        <value>Operator</value>
+                                    </item>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                                <steps>1. Создать заявление по услуге и заполнить все обязательные поля
+                                    2. Заявление отправить в ВИС
+                                    3. Дождаться результата от ведомства</steps>
+                                <expected>В АИС пришел успешный ответ от ведомства. Есть возможность просмотреть
+                                    результат полученный по каналам СМЭВ (печатка).</expected>
+                            </custom>
+                            <caseid>C465</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T541</id>
+                            <title>Поиск уч. записи ЕСИА (СМЭВ 2, МКС)</title>
+                            <template>Test Case (Text)</template>
+                            <type>Other</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>0</id>
+                                    <value> None</value>
+                                </automation_type>
+                            </custom>
+                            <caseid>C466</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T542</id>
+                            <title>Поиск уч. записи ЕСИА (СМЭВ3)</title>
+                            <template>Test Case (Text)</template>
+                            <type>Other</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>0</id>
+                                    <value> None</value>
+                                </automation_type>
+                            </custom>
+                            <caseid>C467</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                    </tests>
+                </section>
+                <section>
+                    <name>Запросы из ЛКЗ</name>
+                    <description></description>
+                    <tests>
+                        <test>
+                            <id>T532</id>
+                            <title>Запрос СНИЛС</title>
+                            <template>Test Case (Text)</template>
+                            <type>Other</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>1</id>
+                                        <value>Operator</value>
+                                    </item>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                            </custom>
+                            <caseid>C436</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T533</id>
+                            <title>Запрос ИНН</title>
+                            <template>Test Case (Text)</template>
+                            <type>Functional</type>
+                            <priority>High</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>1</id>
+                                    <value> Yes</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>1</id>
+                                        <value>Operator</value>
+                                    </item>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                                <preconds>Открыть карточку заявителя с типом ФЛ или ИП
+                                    У заявителя заполнены: ФИО, дата рождения, паспортные данные</preconds>
+                                <steps>1. Очистить поле &quot;ИНН&quot;
+                                    2. Нажать кнопку &quot;Запрос ИНН&quot;
+                                    3. Отобразилось сообщение &quot;Запрос (UUID) создан и передан в сервис
+                                    гарантированной доставки&quot;
+                                    4. Сохранить карточку
+                                </steps>
+                                <expected>В гарантированной доставке статус отправленного запроса &quot;Отправлено&quot;
+                                    При редактировании страницы карточки заявителя значение ИНН отображается в
+                                    соответствующем поле</expected>
+                            </custom>
+                            <caseid>C437</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                        <test>
+                            <id>T534</id>
+                            <title>Запрос задолженности</title>
+                            <template>Test Case (Text)</template>
+                            <type>Other</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>0</id>
+                                    <value> None</value>
+                                </automation_type>
+                            </custom>
+                            <caseid>C438</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                    </tests>
+                </section>
+                <section>
+                    <name>МВ запросы</name>
+                    <description></description>
+                </section>
+                <section>
+                    <name>Импорт ПК ПВД</name>
+                    <description></description>
+                </section>
+                <section>
+                    <name>МКГУ</name>
+                    <description></description>
+                    <tests>
+                        <test>
+                            <id>T538</id>
+                            <title>Прохождение опросника по номеру заявления</title>
+                            <template>Test Case (Text)</template>
+                            <type>Other</type>
+                            <priority>Medium</priority>
+                            <estimate></estimate>
+                            <references></references>
+                            <custom>
+                                <automation_type>
+                                    <id>0</id>
+                                    <value> None</value>
+                                </automation_type>
+                                <role>
+                                    <item>
+                                        <id>1</id>
+                                        <value>Operator</value>
+                                    </item>
+                                    <item>
+                                        <id>5</id>
+                                        <value>Auditor</value>
+                                    </item>
+                                </role>
+                            </custom>
+                            <caseid>C454</caseid>
+                            <status>Untested</status>
+                            <assignedto></assignedto>
+                            <inprogress></inprogress>
+                            <changes>
+                            </changes>
+                        </test>
+                    </tests>
+                </section>
+            </sections>
+        </section>
+        <section>
+            <name>Пользователи</name>
+            <description></description>
+        </section>
+        <section>
+            <name>Уведомление о результатах услуги</name>
+            <description></description>
+        </section>
+    </sections>
+</run>
+</div>
+
+</body>
+</html>
+
+

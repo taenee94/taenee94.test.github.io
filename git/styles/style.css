@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+.card-header {
+    width: 1600px;
+    height: 900px;
+    background-image: url('\heder.jpg');
+    background-color: white;
+    color: black;
+}
